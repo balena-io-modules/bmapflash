@@ -1,0 +1,43 @@
+{
+  "name": "bmapflash",
+  "version": "1.0.0",
+  "description": "Flash an image using a `.bmap` file",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/resin-io-modules/bmapflash",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/resin-io-modules/bmapflash.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run lint && mocha --recursive tests -R spec",
+    "lint": "eslint lib tests",
+    "readme": "jsdoc2md --template doc/README.hbs lib/index.js > README.md"
+  },
+  "keywords": [
+    "bmap",
+    "tools",
+    "bmaptools",
+    "flash",
+    "flasher"
+  ],
+  "author": "Juan Cruz Viotti <juan@resin.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "jsdoc-to-markdown": "^1.1.1",
+    "mocha": "^2.4.5",
+    "mochainon": "^1.0.0",
+    "streamtest": "^1.2.2"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "lodash": "^4.14.2",
+    "progress-stream": "^1.2.0",
+    "stream-chunker": "^1.2.8",
+    "through2": "^2.0.1",
+    "xml2js": "^0.4.17"
+  }
+}

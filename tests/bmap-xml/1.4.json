@@ -1,0 +1,85 @@
+{
+  "version": "1.4",
+  "imageSize": 3998237696,
+  "checksumType": "sha256",
+  "blocksCount": 976133,
+  "mappedBlocksCount": 209168,
+  "blockSize": 4096,
+  "ranges": [
+    {
+      "from": 0,
+      "to": 4,
+      "checksum": "ea66c5762cf7a63ecd98a5b972ed57d0ca319de9196613c29d92c16e82a9a603"
+    },
+    {
+      "from": 256,
+      "to": 1919,
+      "checksum": "f50042546c89460967dfb71cbaa5aed14f18b7abe618eedc6be4c250aed5fb21"
+    },
+    {
+      "from": 12544,
+      "to": 13703,
+      "checksum": "bf634e74431550f26129c00cf7f55d976adf0d71bcf97bf7f4772656521308f1"
+    },
+    {
+      "from": 15616,
+      "to": 16255,
+      "checksum": "5be706250b7a79b8bd58855b19ba91094d5b8fe9001fd62dc1294630a6819bd6"
+    },
+    {
+      "from": 16384,
+      "to": 16511,
+      "checksum": "919cfe81159e97899bd4a6dbda767a43efd8b395d39d63dbb9bf3dabc83b652a"
+    },
+    {
+      "from": 16608,
+      "to": 16634,
+      "checksum": "7c98d2da7afa2bdee9765910c81cb588e14781b77538fb54df84f7e7039e4348"
+    },
+    {
+      "from": 16640,
+      "to": 16881,
+      "checksum": "c7cbaf526b3ecc5b79ac8a993722a28995b7d0239ba210a3061b358a07a16894"
+    },
+    {
+      "from": 16883,
+      "to": 16883,
+      "checksum": "effdfd76ee7384e7b506985f8bd3b5d21cd1d1895c829fc10c3938013188b669"
+    },
+    {
+      "from": 16885,
+      "to": 16885,
+      "checksum": "effdfd76ee7384e7b506985f8bd3b5d21cd1d1895c829fc10c3938013188b669"
+    },
+    {
+      "from": 16889,
+      "to": 16889,
+      "checksum": "33fdf647973fde05156c38ba7dedd2b5bc874fa10e1313105fbf8aa9b50601dc"
+    },
+    {
+      "from": 16892,
+      "to": 16893,
+      "checksum": "06308f48b3dd70980231896e3da0a3250c95a0fc7203e92c3d75f179df898dcd"
+    },
+    {
+      "from": 16908,
+      "to": 26665,
+      "checksum": "52a98324357718ec7554c38ccb7a1b5cafd38e0c012e72e40ae63020df7673db"
+    },
+    {
+      "from": 49408,
+      "to": 49409,
+      "checksum": "d15508719738ac16a38b1d328bed44b4966d11c6f25adb49ebce2dae22b882d5"
+    },
+    {
+      "from": 901376,
+      "to": 901377,
+      "checksum": "30cb3c6546b0fcaf5d04947b20b68a2c46f606267ed54f093eeabd8382764df0"
+    },
+    {
+      "from": 976112,
+      "to": 976132,
+      "checksum": "8d1181e3d36e97d78876bb318e8fec2f3d1d4c50225687efeeea8e375d8d5815"
+    }
+  ]
+}

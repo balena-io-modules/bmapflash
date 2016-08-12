@@ -1,0 +1,55 @@
+{
+  "version": "1.1",
+  "imageSize": 2717908993,
+  "checksumType": "sha1",
+  "blocksCount": 663553,
+  "mappedBlocksCount": 295179,
+  "blockSize": 4096,
+  "ranges": [
+    {
+      "from": 0,
+      "to": 1416,
+      "checksum": "5be02592f74637650bd85b184dbaf74757145a0e"
+    },
+    {
+      "from": 4096,
+      "to": 5155,
+      "checksum": "dd0fd1471e6472e0ecd3166e986cfd3dcc152647"
+    },
+    {
+      "from": 8299,
+      "to": 16288,
+      "checksum": "1affe3b0f5308ea981c6985e039f73a65262d9b4"
+    },
+    {
+      "from": 47616,
+      "to": 47624,
+      "checksum": "2628a21ce20327493c2b93ed83def43e1e69a038"
+    },
+    {
+      "from": 237568,
+      "to": 237569,
+      "checksum": "98da5b55236805e8270c260f0a98a76b3141387a"
+    },
+    {
+      "from": 303104,
+      "to": 303105,
+      "checksum": "61177d152ff83b7b3772f87f5f40feb94b442ef2"
+    },
+    {
+      "from": 335979,
+      "to": 345922,
+      "checksum": "67d3ff0491ee0173aa685127825c29e873b4a066"
+    },
+    {
+      "from": 630865,
+      "to": 633101,
+      "checksum": "a477b634efb05da2b38579ce6fabddc16b537d4b"
+    },
+    {
+      "from": 663536,
+      "to": 663552,
+      "checksum": "98cb09a876245bf113424e8114af2ba9ba9f2658"
+    }
+  ]
+}

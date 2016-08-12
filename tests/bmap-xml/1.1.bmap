@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+
+<!-- This file contains block map for an image file. The block map
+     is basically a list of block numbers in the image file. It lists
+     only those blocks which contain data (boot sector, partition
+     table, file-system metadata, files, directories, extents, etc).
+     These blocks have to be copied to the target device. The other
+     blocks do not contain any useful data and do not have to be
+     copied to the target device. Thus, using the block map users can
+     flash the image fast. So the block map is just an optimization.
+     It is OK to ignore this file and just flash the entire image to
+     the target device if the flashing speed is not important.
+
+     Note, this file contains commentaries with useful information
+     like image size in gigabytes, percentage of mapped data, etc.
+     This data is there merely to make the XML file human-readable.
+
+     The 'version' attribute is the block map file format version in
+     the 'major.minor' format. The version major number is increased
+     whenever we make incompatible changes to the block map format,
+     meaning that the bmap-aware flasher would have to be modified in
+     order to support the new format. The minor version is increased
+     in case of compatible changes. For example, if we add an attribute
+     which is optional for the bmap-aware flasher. -->
+<bmap version="1.1">
+	<!-- Image size in bytes (2.5G) -->
+	<ImageSize> 2717908993 </ImageSize>
+
+	<!-- Size of a block in bytes -->
+	<BlockSize> 4096 </BlockSize>
+
+	<!-- Count of blocks in the image file -->
+	<BlocksCount> 663553 </BlocksCount>
+
+	<!-- The block map which consists of elements which may either
+	     be a range of blocks or a single block. The 'sha1' attribute
+	     is the SHA1 checksum of the this range of blocks. -->
+	<BlockMap>
+		<Range sha1="5be02592f74637650bd85b184dbaf74757145a0e"> 0-1416 </Range>
+		<Range sha1="dd0fd1471e6472e0ecd3166e986cfd3dcc152647"> 4096-5155 </Range>
+		<Range sha1="1affe3b0f5308ea981c6985e039f73a65262d9b4"> 8299-16288 </Range>
+		<Range sha1="2628a21ce20327493c2b93ed83def43e1e69a038"> 47616-47624 </Range>
+		<Range sha1="98da5b55236805e8270c260f0a98a76b3141387a"> 237568-237569 </Range>
+		<Range sha1="61177d152ff83b7b3772f87f5f40feb94b442ef2"> 303104-303105 </Range>
+		<Range sha1="67d3ff0491ee0173aa685127825c29e873b4a066"> 335979-345922 </Range>
+		<Range sha1="a477b634efb05da2b38579ce6fabddc16b537d4b"> 630865-633101 </Range>
+		<Range sha1="98cb09a876245bf113424e8114af2ba9ba9f2658"> 663536-663552 </Range>
+	</BlockMap>
+
+	<!-- Count of mapped blocks (1.1G or 44.5% mapped) -->
+	<MappedBlocksCount> 295179 </MappedBlocksCount>
+</bmap>
