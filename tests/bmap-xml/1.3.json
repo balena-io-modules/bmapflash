@@ -1,0 +1,20 @@
+{
+  "version": "1.3",
+  "imageSize": 36864,
+  "checksumType": "sha1",
+  "blocksCount": 9,
+  "mappedBlocksCount": 4,
+  "blockSize": 4096,
+  "ranges": [
+    {
+      "from": 0,
+      "to": 1,
+      "checksum": "193edb53bde599f58369f4e83a6c5d54b96819ce"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "checksum": "193edb53bde599f58369f4e83a6c5d54b96819ce"
+    }
+  ]
+}
