@@ -34,6 +34,7 @@ const testBmapParse = (xmlFile, jsonFile) => {
     })
   }).then((results) => {
     m.chai.expect(results.bmap).to.deep.equal(results.json);
+    m.chai.expect(bmapFile.isVersionSupported(results.bmap.version)).to.be.true;
   });
 };
 
@@ -46,6 +47,12 @@ describe('Bmap File', function() {
     it('should be able to parse a bmap v1.4 file', function(done) {
       const xmlFile = path.join(BMAP_FILES, '1.4.bmap');
       const jsonFile = path.join(BMAP_FILES, '1.4.json');
+      return testBmapParse(xmlFile, jsonFile).asCallback(done);
+    });
+
+    it('should be able to parse a bmap v1.3 file', function(done) {
+      const xmlFile = path.join(BMAP_FILES, '1.3.bmap');
+      const jsonFile = path.join(BMAP_FILES, '1.3.json');
       return testBmapParse(xmlFile, jsonFile).asCallback(done);
     });
 
