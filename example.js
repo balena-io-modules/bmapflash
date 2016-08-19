@@ -46,7 +46,7 @@ flasher.on('error', (error) => {
 });
 
 flasher.on('progress', (state) => {
-  console.error(state);
+  console.log(state);
 });
 
 flasher.on('done', (error) => {
@@ -60,7 +60,7 @@ flasher.on('done', (error) => {
   });
 
   validator.on('progress', (state) => {
-    console.error(state);
+    console.log(state);
   });
 
   validator.on('done', (invalidChunks) => {
