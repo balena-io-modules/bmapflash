@@ -42,6 +42,7 @@ const flasher = bmapflash.flashImageToFileDescriptor(
 
 flasher.on('error', (error) => {
   console.error(error);
+  fs.closeSync(deviceFileDescriptor);
 });
 
 flasher.on('progress', (state) => {
@@ -55,6 +56,7 @@ flasher.on('done', (error) => {
 
   validator.on('error', (error) => {
     console.error(error);
+    fs.closeSync(deviceFileDescriptor);
   });
 
   validator.on('progress', (state) => {
@@ -68,6 +70,8 @@ flasher.on('done', (error) => {
       console.log('Some blocks were not written correctly:');
       console.log(invalidChunks);
     }
+
+    fs.closeSync(deviceFileDescriptor);
   });
 });
 
