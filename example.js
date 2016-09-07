@@ -37,7 +37,9 @@ const bmapContents = fs.readFileSync(BMAP_FILE, {
 const flasher = bmapflash.flashImageToFileDescriptor(
   imageStream,
   deviceFileDescriptor,
-  bmapContents
+  bmapContents, {
+    bytesToZeroOutFromTheBeginning: 65536 * 16
+  }
 );
 
 flasher.on('error', (error) => {

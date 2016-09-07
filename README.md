@@ -22,22 +22,24 @@ Documentation
 
 
 * [bmapflash](#module_bmapflash)
-    * [.flashImageToFileDescriptor(imageStream, deviceFileDescriptor, bmapContents)](#module_bmapflash.flashImageToFileDescriptor) ⇒ <code>EventEmitter</code>
+    * [.flashImageToFileDescriptor(imageStream, deviceFileDescriptor, bmapContents, [options])](#module_bmapflash.flashImageToFileDescriptor) ⇒ <code>EventEmitter</code>
     * [.validateFlashedImage(deviceFileDescriptor, bmapContents)](#module_bmapflash.validateFlashedImage) ⇒ <code>EventEmitter</code>
 
 <a name="module_bmapflash.flashImageToFileDescriptor"></a>
 
-### bmapflash.flashImageToFileDescriptor(imageStream, deviceFileDescriptor, bmapContents) ⇒ <code>EventEmitter</code>
+### bmapflash.flashImageToFileDescriptor(imageStream, deviceFileDescriptor, bmapContents, [options]) ⇒ <code>EventEmitter</code>
 **Kind**: static method of <code>[bmapflash](#module_bmapflash)</code>  
 **Summary**: Flash image to file descriptor  
 **Returns**: <code>EventEmitter</code> - event emitter  
 **Access:** public  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| imageStream | <code>ReadableStream</code> | image stream |
-| deviceFileDescriptor | <code>Number</code> | device file descriptor |
-| bmapContents | <code>String</code> | bmap contents |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| imageStream | <code>ReadableStream</code> |  | image stream |
+| deviceFileDescriptor | <code>Number</code> |  | device file descriptor |
+| bmapContents | <code>String</code> |  | bmap contents |
+| [options] | <code>Object</code> | <code>{}</code> | options |
+| [options.bytesToZeroOutFromTheBeginning] | <code>Number</code> | <code>0</code> | bytes to zero out from the beginning |
 
 **Example**  
 ```js
