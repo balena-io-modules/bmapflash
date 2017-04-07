@@ -17,6 +17,7 @@
 'use strict';
 
 const m = require('mochainon');
+const _ = require('lodash');
 const StreamTest = require('streamtest');
 const OffsetWriteStream = require('../lib/offset-write-stream');
 
@@ -59,7 +60,7 @@ describe('OffsetWriteStream', function() {
             }
           ]).pipe(new OffsetWriteStream({
             write: (data, offset, callback) => {
-              Reflect.apply(self.file.splice, self.file, [
+              _.spread(_.bind(self.file.splice, self.file))([
                 offset,
                 data.length
               ].concat(data));
