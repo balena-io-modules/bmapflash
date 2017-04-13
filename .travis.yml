@@ -1,28 +1,12 @@
-language: cpp
-sudo: false
-
-env:
-  - NODE_VERSION="6"
-
-os:
-  - linux
-  - osx
-
+language: node_js
 before_install:
-  - rm -rf ~/.nvm
-  - git clone https://github.com/creationix/nvm.git ~/.nvm
-  - source ~/.nvm/nvm.sh
-  - nvm --version
-  - nvm install $NODE_VERSION
-  - node --version
-  - npm --version
-  - npm config set spin=false
-
+  - npm install -g npm@latest
 install:
   - npm install
-
 script:
   - npm test
-
+node_js:
+  - "6"
+  - "4"
 notifications:
   email: false
