@@ -1,6 +1,6 @@
 {
   "name": "bmapflash",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Flash an image using a `.bmap` file",
   "main": "lib/index.js",
   "homepage": "https://github.com/resin-io-modules/bmapflash",

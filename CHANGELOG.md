@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### v1.2.1
 
+## 1.2.2 - 2020-03-03
+
+* Update dependencies [Pagan Gazzard]
+
 - Make this module compatible with Node.js v4.
 
 ### v1.2.0
