@@ -26,7 +26,7 @@
   "author": "Juan Cruz Viotti <juan@resin.io>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.0.1",
+    "eslint": "^6.8.0",
     "jsdoc-to-markdown": "^5.0.3",
     "mocha": "^2.4.5",
     "mochainon": "^1.0.0",
