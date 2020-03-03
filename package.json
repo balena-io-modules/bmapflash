@@ -27,18 +27,18 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.0.1",
-    "jsdoc-to-markdown": "^1.1.1",
+    "jsdoc-to-markdown": "^5.0.3",
     "mocha": "^2.4.5",
     "mochainon": "^1.0.0",
     "streamtest": "^1.2.2",
     "tmp": "0.0.28"
   },
   "dependencies": {
-    "bluebird": "^3.4.1",
-    "lodash": "^4.14.2",
-    "progress-stream": "^1.2.0",
+    "bluebird": "^3.7.2",
+    "lodash": "^4.17.15",
+    "progress-stream": "^2.0.0",
     "stream-chunker": "^1.2.8",
-    "through2": "^2.0.1",
-    "xml2js": "^0.4.17"
+    "through2": "^2.0.5",
+    "xml2js": "^0.4.23"
   }
 }

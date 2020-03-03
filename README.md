@@ -28,10 +28,10 @@ Documentation
 <a name="module_bmapflash.flashImageToFileDescriptor"></a>
 
 ### bmapflash.flashImageToFileDescriptor(imageStream, deviceFileDescriptor, bmapContents, [options]) ⇒ <code>EventEmitter</code>
-**Kind**: static method of <code>[bmapflash](#module_bmapflash)</code>  
+**Kind**: static method of [<code>bmapflash</code>](#module_bmapflash)  
 **Summary**: Flash image to file descriptor  
 **Returns**: <code>EventEmitter</code> - event emitter  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -91,10 +91,10 @@ The returned event emitter might emit the following events:
 - `progress (Object)`: Emitted regularly, passing an object containing
   progress state information.
 
-**Kind**: static method of <code>[bmapflash](#module_bmapflash)</code>  
+**Kind**: static method of [<code>bmapflash</code>](#module_bmapflash)  
 **Summary**: Validate flashed image  
 **Returns**: <code>EventEmitter</code> - event emitter  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Description |
 | --- | --- | --- |
